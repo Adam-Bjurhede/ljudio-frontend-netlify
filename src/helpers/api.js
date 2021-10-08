@@ -63,13 +63,13 @@ export const Fetch = {
 const users = '/api/users';
 const playlists = '/api/users/playlists';
 const songs = '/api/music/songs';
-const music = '/api/music/';
+const music = '/api/music';
 const cue = '/api/users/cue';
 
 export const API = {
   USER: {
-    LOGIN: `${users}/login/`,
-    LOGOUT: `${users}/logout/`,
+    LOGIN: `${users}/login`,
+    LOGOUT: `${users}/logout`,
     AUTH: `/api/auth`,
   },
 
@@ -92,7 +92,7 @@ export const API = {
 
   MUSIC: {
     ARTISTS: `${music}/artists`,
-    ONE_ARTIST: `${music}/artists/1/`,
+    ONE_ARTIST: `${music}/artists/1`,
     ALBUMS: `${music}/albums`,
     PLAYLISTS: `${music}/playlists`,
     VIDEOS: `${music}/videos`,

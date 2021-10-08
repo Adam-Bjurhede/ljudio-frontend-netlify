@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [reactRefresh()],
   server: {
     proxy: {
-      '/api/': 'http://localhost:7000'
+      '/api': 'https://ljudio-backend.herokuapp.com'
     },
     fs: {
       strict: false

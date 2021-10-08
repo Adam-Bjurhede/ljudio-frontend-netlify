@@ -39,7 +39,7 @@ function RegisterPage() {
     };
 
     const createUser = async () => {
-      const req = await fetch('http://localhost:7000/api/users', {
+      const req = await fetch('/api/users', {
         headers: {
           'Content-Type': 'application/json',
         },
