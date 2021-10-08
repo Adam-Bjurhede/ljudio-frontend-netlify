@@ -1,5 +1,9 @@
 [[redirects]]
-from = "/*"
+from = "/api/*"
 to = "https://ljudio-backend.herokuapp.com/api/:splat"
 status = 200
 
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
