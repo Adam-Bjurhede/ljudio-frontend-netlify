@@ -14,7 +14,7 @@ function SongCard({ videoId, name, artist, thumbnails, index }) {
   return (
     <SongCardWrapper>
       <div className='thumbnail-title-container'>
-        <div style={{ backgroundImage: `url(${thumbnails[1].url})` }} className='album-cover'></div>
+        <div style={{ backgroundImage: `url(${thumbnails[1] && thumbnails[1].url})` }} className='album-cover'></div>
         <Link to={`/songs/${videoId}`}>
           <div className='song-info'>
             <h3>{artist.name}</h3>
