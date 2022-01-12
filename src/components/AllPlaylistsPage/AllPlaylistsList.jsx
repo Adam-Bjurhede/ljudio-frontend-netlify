@@ -62,8 +62,8 @@ function AllPlaylistsList() {
           <h2 className='no-playlist'>No Playlists Found!</h2>
         )}
         {allPlaylists &&
-          allPlaylists.playlists &&
-          allPlaylists.playlists.map((playlist, i) => (
+          allPlaylists?.playlists &&
+          allPlaylists?.playlists?.map((playlist, i) => (
             <AllPlaylistsListItemCard key={playlist.playlistId} {...playlist} bgColor={colors[i]} />
           ))}
       </AllPlaylistsListWrapper>

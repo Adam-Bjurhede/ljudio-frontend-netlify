@@ -48,8 +48,8 @@ function AddMusicToPlayListList() {
       <CreatePlaylist />
 
       {data &&
-        data.userPlaylists &&
-        data.userPlaylists.map((playlist, index) => <AddMusicToPlaylistItem key={index} {...playlist} />)}
+        data?.userPlaylists &&
+        data?.userPlaylists?.map((playlist, index) => <AddMusicToPlaylistItem key={index} {...playlist} />)}
     </AddMusicToPlayListListWrapper>
   );
 }
